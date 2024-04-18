@@ -1,0 +1,54 @@
+{
+  "xsappname": "sapsupportboostboost",
+  "tenant-mode": "dedicated",
+  "description": "Security profile of called application",
+  "scopes": [
+    {
+
+      "name": "uaa.user",
+
+      "description": "UAA"
+
+  },
+    {
+      "name": "$XSAPPNAME.user",
+      "description": "Can access Boost"
+    }
+  ],
+  "authorities": [
+
+    "$XSAPPNAME.user"
+
+  ],
+  "role-templates": [
+    {
+
+      "name": "Token_Exchange",
+
+      "description": "UAA",
+
+      "scope-references": [
+
+          "uaa.user"
+
+      ]
+
+  },
+    {
+      "name": "User",
+      "description": "Boost User - Can access Boost",
+      "scope-references": [
+        "$XSAPPNAME.user"
+      ],
+      "attribute-references": []
+    }
+  ],
+  "oauth2-configuration": {
+    "redirect-uris": [
+        "https://**.hana.ondemand.com/**",
+        "https://**.applicationstudio.cloud.sap/**",
+        "http://localhost:*/**"
+    ]
+  }
+}
+

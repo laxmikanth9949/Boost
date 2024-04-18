@@ -1,0 +1,78 @@
+{
+  "welcomeFile": "/index.html",
+  "authenticationMethod": "route",
+  "routes": [
+    {
+      "source": "^/sap/opu/odata/(.*)$",
+      "target": "$1",
+      "csrfProtection": false,
+      "destination": "int_ic",
+      "authenticationType": "xsuaa"
+    },
+    {
+      "source": "^/intis/(.*)$",
+      "target": "$1",
+      "csrfProtection": false,
+      "destination": "int_is",
+      "authenticationType": "xsuaa"
+    },
+    {
+      "source": "^/servicenow/(.*)$",
+      "target": "$1",
+      "destination": "int_snow"
+    },
+    {
+      "source": "^/sapit-employee-data",
+      "target": "/",
+      "csrfProtection": false,
+      "destination": "sapit-employee-data",
+      "authenticationType": "xsuaa"
+    },
+    {
+      "source": "^/services/customer/search/(.*)$",
+      "target": "/sap/opu/odata/sap/ZS_ESCALATIONS/$1",
+      "csrfProtection": false,
+      "destination": "int_pg",
+      "authenticationType": "xsuaa"
+    },
+    {
+      "source": "^/services/ism/(.*)$",
+      "target": "$1",
+      "csrfProtection": false,
+      "destination": "int_ism",
+      "authenticationType": "xsuaa"
+    },
+    {
+      "source": "^/help/(.*)$",
+      "target": "/help/$1",
+      "csrfProtection": false,
+      "destination": "java_xs0pcd",
+      "authenticationType": "xsuaa"
+    },
+    {
+      "source": "^/user-api(.*)",
+      "target": "$1",
+      "service": "sap-approuter-userapi"
+    },
+    {
+      "source": "^/index.html",
+      "service": "html5-apps-repo-rt",
+      "cacheControl": "no-cache, no-store, must-revalidate"
+    },
+    {
+      "source": "^/sap-ui-cachebuster-info.json(.*)$",
+      "target": "/sap-ui-cachebuster-info.json$1",
+      "service": "html5-apps-repo-rt",
+      "cacheControl": "no-cache, no-store, must-revalidate"
+    },
+    {
+      "source": "^(.*)$",
+      "target": "$1",
+      "service": "html5-apps-repo-rt",
+      "authenticationType":"xsuaa",
+      "scope": [
+        "$XSAPPNAME.user"
+      ]
+    }
+  ]
+}
