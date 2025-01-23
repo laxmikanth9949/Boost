@@ -1,0 +1,9 @@
+<core:FragmentDefinition xmlns="sap.m" xmlns:core="sap.ui.core">
+	<ActionSheet showCancelButton="false" placement="Top">
+		<buttons>
+			<Button id="btn_create" text="{i18n>CreateAssigment}" press="onCreateAssignment"/>
+			<Button id="btn_modify" text="{i18n>ModifyAssigment}" press="onModifyAssignment"/>
+			<Button id="btn_delete" text="{i18n>DeleteAssigment}" press="onDeleteAssignment"/>
+		</buttons>
+	</ActionSheet>
+</core:FragmentDefinition>

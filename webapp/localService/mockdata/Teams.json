@@ -1,0 +1,165 @@
+{
+	"d": {
+		"results": [{
+			"__metadata": {
+				"id": "https://pgpmain.wdf.sap.corp/sap/opu/odata/sap/ZS_BACKOFFICE_STAFFING_SRV/Teams(Region='EMEA',Date=datetime'2020-01-26T00%3A00%3A00',Team_Id='Control%20Center')",
+				"uri": "https://pgpmain.wdf.sap.corp/sap/opu/odata/sap/ZS_BACKOFFICE_STAFFING_SRV/Teams(Region='EMEA',Date=datetime'2020-01-26T00%3A00%3A00',Team_Id='Control%20Center')",
+				"type": "ZS_BACKOFFICE_STAFFING_SRV.Teams"
+			},
+			"Region": "EMEA",
+			"Date": "\/Date(1579996800000)\/",
+			"Team_Id": "Control Center",
+			"Meta_Team": "Business Down Team.",
+			"Topic": "10",
+			"Service_Order_Id": "77010167",
+			"Service_Item_Id": "0000000020",
+			"Is_Holiday": "",
+			"Holiday_Text_Short": "",
+			"Holiday_Text_Long": ""
+		}, {
+			"__metadata": {
+				"id": "https://pgpmain.wdf.sap.corp/sap/opu/odata/sap/ZS_BACKOFFICE_STAFFING_SRV/Teams(Region='EMEA',Date=datetime'2020-01-26T00%3A00%3A00',Team_Id='Qualification%20-%20Dispatching%20WE%2FPH')",
+				"uri": "https://pgpmain.wdf.sap.corp/sap/opu/odata/sap/ZS_BACKOFFICE_STAFFING_SRV/Teams(Region='EMEA',Date=datetime'2020-01-26T00%3A00%3A00',Team_Id='Qualification%20-%20Dispatching%20WE%2FPH')",
+				"type": "ZS_BACKOFFICE_STAFFING_SRV.Teams"
+			},
+			"Region": "EMEA",
+			"Date": "\/Date(1579996800000)\/",
+			"Team_Id": "Qualification - Dispatching WE/PH",
+			"Meta_Team": "Business Down Team.",
+			"Topic": "25",
+			"Service_Order_Id": "77010167",
+			"Service_Item_Id": "0000000900",
+			"Is_Holiday": "",
+			"Holiday_Text_Short": "",
+			"Holiday_Text_Long": ""
+		}, {
+			"__metadata": {
+				"id": "https://pgpmain.wdf.sap.corp/sap/opu/odata/sap/ZS_BACKOFFICE_STAFFING_SRV/Teams(Region='EMEA',Date=datetime'2020-01-26T00%3A00%3A00',Team_Id='WE%2FPH%20In-Office%209am-6pm%20CET')",
+				"uri": "https://pgpmain.wdf.sap.corp/sap/opu/odata/sap/ZS_BACKOFFICE_STAFFING_SRV/Teams(Region='EMEA',Date=datetime'2020-01-26T00%3A00%3A00',Team_Id='WE%2FPH%20In-Office%209am-6pm%20CET')",
+				"type": "ZS_BACKOFFICE_STAFFING_SRV.Teams"
+			},
+			"Region": "EMEA",
+			"Date": "\/Date(1579996800000)\/",
+			"Team_Id": "WE/PH In-Office 9am-6pm CET",
+			"Meta_Team": "Business Down Team.",
+			"Topic": "200",
+			"Service_Order_Id": "77010167",
+			"Service_Item_Id": "0000005020",
+			"Is_Holiday": "",
+			"Holiday_Text_Short": "",
+			"Holiday_Text_Long": ""
+		}, {
+			"__metadata": {
+				"id": "https://pgpmain.wdf.sap.corp/sap/opu/odata/sap/ZS_BACKOFFICE_STAFFING_SRV/Teams(Region='EMEA',Date=datetime'2020-01-26T00%3A00%3A00',Team_Id='WE%2FPH%20On-Call%209am-6pm%20CET')",
+				"uri": "https://pgpmain.wdf.sap.corp/sap/opu/odata/sap/ZS_BACKOFFICE_STAFFING_SRV/Teams(Region='EMEA',Date=datetime'2020-01-26T00%3A00%3A00',Team_Id='WE%2FPH%20On-Call%209am-6pm%20CET')",
+				"type": "ZS_BACKOFFICE_STAFFING_SRV.Teams"
+			},
+			"Region": "EMEA",
+			"Date": "\/Date(1579996800000)\/",
+			"Team_Id": "WE/PH On-Call 9am-6pm CET",
+			"Meta_Team": "Business Down Team.",
+			"Topic": "210",
+			"Service_Order_Id": "77010167",
+			"Service_Item_Id": "0000005100",
+			"Is_Holiday": "",
+			"Holiday_Text_Short": "",
+			"Holiday_Text_Long": ""
+		}, {
+			"__metadata": {
+				"id": "https://pgpmain.wdf.sap.corp/sap/opu/odata/sap/ZS_BACKOFFICE_STAFFING_SRV/Teams(Region='EMEA',Date=datetime'2020-02-26T00%3A00%3A00',Team_Id='Control%20Center')",
+				"uri": "https://pgpmain.wdf.sap.corp/sap/opu/odata/sap/ZS_BACKOFFICE_STAFFING_SRV/Teams(Region='EMEA',Date=datetime'2020-02-26T00%3A00%3A00',Team_Id='Control%20Center')",
+				"type": "ZS_BACKOFFICE_STAFFING_SRV.Teams"
+			},
+			"Region": "EMEA",
+			"Date": "\/Date(1582675200000)\/",
+			"Team_Id": "Control Center",
+			"Meta_Team": "Business Down Team.",
+			"Topic": "10",
+			"Service_Order_Id": "77010192",
+			"Service_Item_Id": "0000000020",
+			"Is_Holiday": "",
+			"Holiday_Text_Short": "",
+			"Holiday_Text_Long": ""
+		}, {
+			"__metadata": {
+				"id": "https://pgpmain.wdf.sap.corp/sap/opu/odata/sap/ZS_BACKOFFICE_STAFFING_SRV/Teams(Region='EMEA',Date=datetime'2020-02-26T00%3A00%3A00',Team_Id='Technology')",
+				"uri": "https://pgpmain.wdf.sap.corp/sap/opu/odata/sap/ZS_BACKOFFICE_STAFFING_SRV/Teams(Region='EMEA',Date=datetime'2020-02-26T00%3A00%3A00',Team_Id='Technology')",
+				"type": "ZS_BACKOFFICE_STAFFING_SRV.Teams"
+			},
+			"Region": "EMEA",
+			"Date": "\/Date(1582675200000)\/",
+			"Team_Id": "Technology",
+			"Meta_Team": "Business Down Team",
+			"Topic": "10",
+			"Service_Order_Id": "77010192",
+			"Service_Item_Id": "0000000310",
+			"Is_Holiday": "",
+			"Holiday_Text_Short": "",
+			"Holiday_Text_Long": ""
+		}, {
+			"__metadata": {
+				"id": "https://pgpmain.wdf.sap.corp/sap/opu/odata/sap/ZS_BACKOFFICE_STAFFING_SRV/Teams(Region='EMEA',Date=datetime'2020-02-26T00%3A00%3A00',Team_Id='Applications')",
+				"uri": "https://pgpmain.wdf.sap.corp/sap/opu/odata/sap/ZS_BACKOFFICE_STAFFING_SRV/Teams(Region='EMEA',Date=datetime'2020-02-26T00%3A00%3A00',Team_Id='Applications')",
+				"type": "ZS_BACKOFFICE_STAFFING_SRV.Teams"
+			},
+			"Region": "EMEA",
+			"Date": "\/Date(1582675200000)\/",
+			"Team_Id": "Applications",
+			"Meta_Team": "Business Down Team.",
+			"Topic": "12",
+			"Service_Order_Id": "77010192",
+			"Service_Item_Id": "0000000600",
+			"Is_Holiday": "",
+			"Holiday_Text_Short": "",
+			"Holiday_Text_Long": ""
+		}, {
+			"__metadata": {
+				"id": "https://pgpmain.wdf.sap.corp/sap/opu/odata/sap/ZS_BACKOFFICE_STAFFING_SRV/Teams(Region='EMEA',Date=datetime'2020-02-26T00%3A00%3A00',Team_Id='Others')",
+				"uri": "https://pgpmain.wdf.sap.corp/sap/opu/odata/sap/ZS_BACKOFFICE_STAFFING_SRV/Teams(Region='EMEA',Date=datetime'2020-02-26T00%3A00%3A00',Team_Id='Others')",
+				"type": "ZS_BACKOFFICE_STAFFING_SRV.Teams"
+			},
+			"Region": "EMEA",
+			"Date": "\/Date(1582675200000)\/",
+			"Team_Id": "Others",
+			"Meta_Team": "Business Down Team",
+			"Topic": "14",
+			"Service_Order_Id": "77010192",
+			"Service_Item_Id": "0000001000",
+			"Is_Holiday": "",
+			"Holiday_Text_Short": "",
+			"Holiday_Text_Long": ""
+		}, {
+			"__metadata": {
+				"id": "https://pgpmain.wdf.sap.corp/sap/opu/odata/sap/ZS_BACKOFFICE_STAFFING_SRV/Teams(Region='EMEA',Date=datetime'2020-02-26T00%3A00%3A00',Team_Id='Cloud')",
+				"uri": "https://pgpmain.wdf.sap.corp/sap/opu/odata/sap/ZS_BACKOFFICE_STAFFING_SRV/Teams(Region='EMEA',Date=datetime'2020-02-26T00%3A00%3A00',Team_Id='Cloud')",
+				"type": "ZS_BACKOFFICE_STAFFING_SRV.Teams"
+			},
+			"Region": "EMEA",
+			"Date": "\/Date(1582675200000)\/",
+			"Team_Id": "Cloud",
+			"Meta_Team": "Business Down Team",
+			"Topic": "12",
+			"Service_Order_Id": "77010192",
+			"Service_Item_Id": "0000002000",
+			"Is_Holiday": "",
+			"Holiday_Text_Short": "",
+			"Holiday_Text_Long": ""
+		}, {
+			"__metadata": {
+				"id": "https://pgpmain.wdf.sap.corp/sap/opu/odata/sap/ZS_BACKOFFICE_STAFFING_SRV/Teams(Region='EMEA',Date=datetime'2020-02-26T00%3A00%3A00',Team_Id='EU-DP%20%5BNight%20Duty%2021h%20%28prev.%20day%29%20-8h%5D')",
+				"uri": "https://pgpmain.wdf.sap.corp/sap/opu/odata/sap/ZS_BACKOFFICE_STAFFING_SRV/Teams(Region='EMEA',Date=datetime'2020-02-26T00%3A00%3A00',Team_Id='EU-DP%20%5BNight%20Duty%2021h%20%28prev.%20day%29%20-8h%5D')",
+				"type": "ZS_BACKOFFICE_STAFFING_SRV.Teams"
+			},
+			"Region": "EMEA",
+			"Date": "\/Date(1582675200000)\/",
+			"Team_Id": "EU-DP [Night Duty 21h (prev. day) -8h]",
+			"Meta_Team": "Business Down Team.",
+			"Topic": "14",
+			"Service_Order_Id": "77010192",
+			"Service_Item_Id": "0000006010",
+			"Is_Holiday": "",
+			"Holiday_Text_Short": "",
+			"Holiday_Text_Long": ""
+		}]
+	}
+}

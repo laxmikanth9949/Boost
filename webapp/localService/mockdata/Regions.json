@@ -1,0 +1,109 @@
+{
+	"d": {
+		"results": [{
+			"__metadata": {
+				"id": "https://pgpmain.wdf.sap.corp/sap/opu/odata/sap/ZS_BACKOFFICE_STAFFING_SRV/Regions(Region='APJ',Date=datetime'2020-02-26T00%3A00%3A00')",
+				"uri": "https://pgpmain.wdf.sap.corp/sap/opu/odata/sap/ZS_BACKOFFICE_STAFFING_SRV/Regions(Region='APJ',Date=datetime'2020-02-26T00%3A00%3A00')",
+				"type": "ZS_BACKOFFICE_STAFFING_SRV.Regions"
+			},
+			"Region": "APJ",
+			"Date": "\/Date(1582675200000)\/"
+		}, {
+			"__metadata": {
+				"id": "https://pgpmain.wdf.sap.corp/sap/opu/odata/sap/ZS_BACKOFFICE_STAFFING_SRV/Regions(Region='APJ%20MCC%20DEP',Date=datetime'2020-02-26T00%3A00%3A00')",
+				"uri": "https://pgpmain.wdf.sap.corp/sap/opu/odata/sap/ZS_BACKOFFICE_STAFFING_SRV/Regions(Region='APJ%20MCC%20DEP',Date=datetime'2020-02-26T00%3A00%3A00')",
+				"type": "ZS_BACKOFFICE_STAFFING_SRV.Regions"
+			},
+			"Region": "APJ MCC DEP",
+			"Date": "\/Date(1582675200000)\/"
+		}, {
+			"__metadata": {
+				"id": "https://pgpmain.wdf.sap.corp/sap/opu/odata/sap/ZS_BACKOFFICE_STAFFING_SRV/Regions(Region='APJ%20MCC%20ES',Date=datetime'2020-02-26T00%3A00%3A00')",
+				"uri": "https://pgpmain.wdf.sap.corp/sap/opu/odata/sap/ZS_BACKOFFICE_STAFFING_SRV/Regions(Region='APJ%20MCC%20ES',Date=datetime'2020-02-26T00%3A00%3A00')",
+				"type": "ZS_BACKOFFICE_STAFFING_SRV.Regions"
+			},
+			"Region": "APJ MCC ES",
+			"Date": "\/Date(1582675200000)\/"
+		}, {
+			"__metadata": {
+				"id": "https://pgpmain.wdf.sap.corp/sap/opu/odata/sap/ZS_BACKOFFICE_STAFFING_SRV/Regions(Region='EMEA',Date=datetime'2020-02-26T00%3A00%3A00')",
+				"uri": "https://pgpmain.wdf.sap.corp/sap/opu/odata/sap/ZS_BACKOFFICE_STAFFING_SRV/Regions(Region='EMEA',Date=datetime'2020-02-26T00%3A00%3A00')",
+				"type": "ZS_BACKOFFICE_STAFFING_SRV.Regions"
+			},
+			"Region": "EMEA",
+			"Date": "\/Date(1582675200000)\/"
+		}, {
+			"__metadata": {
+				"id": "https://pgpmain.wdf.sap.corp/sap/opu/odata/sap/ZS_BACKOFFICE_STAFFING_SRV/Regions(Region='EMEA%20CQC%20EGI',Date=datetime'2020-02-26T00%3A00%3A00')",
+				"uri": "https://pgpmain.wdf.sap.corp/sap/opu/odata/sap/ZS_BACKOFFICE_STAFFING_SRV/Regions(Region='EMEA%20CQC%20EGI',Date=datetime'2020-02-26T00%3A00%3A00')",
+				"type": "ZS_BACKOFFICE_STAFFING_SRV.Regions"
+			},
+			"Region": "EMEA CQC EGI",
+			"Date": "\/Date(1582675200000)\/"
+		}, {
+			"__metadata": {
+				"id": "https://pgpmain.wdf.sap.corp/sap/opu/odata/sap/ZS_BACKOFFICE_STAFFING_SRV/Regions(Region='EMEA%20ENG%20SUP',Date=datetime'2020-02-26T00%3A00%3A00')",
+				"uri": "https://pgpmain.wdf.sap.corp/sap/opu/odata/sap/ZS_BACKOFFICE_STAFFING_SRV/Regions(Region='EMEA%20ENG%20SUP',Date=datetime'2020-02-26T00%3A00%3A00')",
+				"type": "ZS_BACKOFFICE_STAFFING_SRV.Regions"
+			},
+			"Region": "EMEA ENG SUP",
+			"Date": "\/Date(1582675200000)\/"
+		}, {
+			"__metadata": {
+				"id": "https://pgpmain.wdf.sap.corp/sap/opu/odata/sap/ZS_BACKOFFICE_STAFFING_SRV/Regions(Region='EMEA%20MCC%20DEP',Date=datetime'2020-02-26T00%3A00%3A00')",
+				"uri": "https://pgpmain.wdf.sap.corp/sap/opu/odata/sap/ZS_BACKOFFICE_STAFFING_SRV/Regions(Region='EMEA%20MCC%20DEP',Date=datetime'2020-02-26T00%3A00%3A00')",
+				"type": "ZS_BACKOFFICE_STAFFING_SRV.Regions"
+			},
+			"Region": "EMEA MCC DEP",
+			"Date": "\/Date(1582675200000)\/"
+		}, {
+			"__metadata": {
+				"id": "https://pgpmain.wdf.sap.corp/sap/opu/odata/sap/ZS_BACKOFFICE_STAFFING_SRV/Regions(Region='EMEA%20MCC%20IA%2FHO',Date=datetime'2020-02-26T00%3A00%3A00')",
+				"uri": "https://pgpmain.wdf.sap.corp/sap/opu/odata/sap/ZS_BACKOFFICE_STAFFING_SRV/Regions(Region='EMEA%20MCC%20IA%2FHO',Date=datetime'2020-02-26T00%3A00%3A00')",
+				"type": "ZS_BACKOFFICE_STAFFING_SRV.Regions"
+			},
+			"Region": "EMEA MCC IA/HO",
+			"Date": "\/Date(1582675200000)\/"
+		}, {
+			"__metadata": {
+				"id": "https://pgpmain.wdf.sap.corp/sap/opu/odata/sap/ZS_BACKOFFICE_STAFFING_SRV/Regions(Region='LA%20BACKOFFICE',Date=datetime'2020-02-26T00%3A00%3A00')",
+				"uri": "https://pgpmain.wdf.sap.corp/sap/opu/odata/sap/ZS_BACKOFFICE_STAFFING_SRV/Regions(Region='LA%20BACKOFFICE',Date=datetime'2020-02-26T00%3A00%3A00')",
+				"type": "ZS_BACKOFFICE_STAFFING_SRV.Regions"
+			},
+			"Region": "LA BACKOFFICE",
+			"Date": "\/Date(1582675200000)\/"
+		}, {
+			"__metadata": {
+				"id": "https://pgpmain.wdf.sap.corp/sap/opu/odata/sap/ZS_BACKOFFICE_STAFFING_SRV/Regions(Region='MCC%20DEP%20SUP%20LA',Date=datetime'2020-02-26T00%3A00%3A00')",
+				"uri": "https://pgpmain.wdf.sap.corp/sap/opu/odata/sap/ZS_BACKOFFICE_STAFFING_SRV/Regions(Region='MCC%20DEP%20SUP%20LA',Date=datetime'2020-02-26T00%3A00%3A00')",
+				"type": "ZS_BACKOFFICE_STAFFING_SRV.Regions"
+			},
+			"Region": "MCC DEP SUP LA",
+			"Date": "\/Date(1582675200000)\/"
+		}, {
+			"__metadata": {
+				"id": "https://pgpmain.wdf.sap.corp/sap/opu/odata/sap/ZS_BACKOFFICE_STAFFING_SRV/Regions(Region='MCS-MCC%20POOL',Date=datetime'2020-02-26T00%3A00%3A00')",
+				"uri": "https://pgpmain.wdf.sap.corp/sap/opu/odata/sap/ZS_BACKOFFICE_STAFFING_SRV/Regions(Region='MCS-MCC%20POOL',Date=datetime'2020-02-26T00%3A00%3A00')",
+				"type": "ZS_BACKOFFICE_STAFFING_SRV.Regions"
+			},
+			"Region": "MCS-MCC POOL",
+			"Date": "\/Date(1582675200000)\/"
+		}, {
+			"__metadata": {
+				"id": "https://pgpmain.wdf.sap.corp/sap/opu/odata/sap/ZS_BACKOFFICE_STAFFING_SRV/Regions(Region='NA%20MCC%20DEP',Date=datetime'2020-02-26T00%3A00%3A00')",
+				"uri": "https://pgpmain.wdf.sap.corp/sap/opu/odata/sap/ZS_BACKOFFICE_STAFFING_SRV/Regions(Region='NA%20MCC%20DEP',Date=datetime'2020-02-26T00%3A00%3A00')",
+				"type": "ZS_BACKOFFICE_STAFFING_SRV.Regions"
+			},
+			"Region": "NA MCC DEP",
+			"Date": "\/Date(1582675200000)\/"
+		}, {
+			"__metadata": {
+				"id": "https://pgpmain.wdf.sap.corp/sap/opu/odata/sap/ZS_BACKOFFICE_STAFFING_SRV/Regions(Region='US%20BACKOFFICE',Date=datetime'2020-02-26T00%3A00%3A00')",
+				"uri": "https://pgpmain.wdf.sap.corp/sap/opu/odata/sap/ZS_BACKOFFICE_STAFFING_SRV/Regions(Region='US%20BACKOFFICE',Date=datetime'2020-02-26T00%3A00%3A00')",
+				"type": "ZS_BACKOFFICE_STAFFING_SRV.Regions"
+			},
+			"Region": "US BACKOFFICE",
+			"Date": "\/Date(1582675200000)\/"
+		}]
+	}
+}

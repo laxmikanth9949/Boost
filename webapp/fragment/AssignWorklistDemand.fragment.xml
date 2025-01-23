@@ -1,0 +1,238 @@
+<core:FragmentDefinition xmlns="sap.m" xmlns:core="sap.ui.core" xmlns:f="sap.ui.layout.form" xmlns:l="sap.ui.layout"
+	controllerName="sap.support.boost.fragment.AssignWorklistDemand">
+	<Dialog title="{i18n>FRAGMENT_ASSIGN_SERVICE_ORDER_TITLE}" id="idForAssignWorklistDemandDialog" beforeOpen="onBeforeOpen">
+		<l:VerticalLayout>
+			<l:HorizontalLayout>
+				<f:Form id="idEditTimeAllocationForm" class="editableForm" width="700px">
+					<f:layout>
+						<f:ResponsiveGridLayout editable="true" layout="ResponsiveGridLayout" labelSpanL="3" labelSpanM="3" emptySpanL="0" emptySpanM="0"
+							columnsL="3" columnsM="3"/>
+					</f:layout>
+					<f:formContainers>
+						<f:FormContainer>
+							<f:formElements>
+								<f:FormElement>
+									<f:label>
+										<Label text="{i18n>FRAGMENT_ASSIGN_SERVICE_ORDER_COLUMN_ASSIGNMENT_DETAILS}" class="sapUiTinyMarginTop"/>
+									</f:label>
+									<f:fields>
+										<Label id="assignmentDetails"
+											text="{parts:[{path:'WorklistDemandsToStaff>/0/serviceOrder'}, {path:'WorklistDemandsToStaff>/0/serviceItem'}], formatter:'.formatterReuse.seperateWithSlash'}"
+											class="sapUiTinyMarginTop"/>
+									</f:fields>
+								</f:FormElement>
+								<f:FormElement >
+									<f:label>
+										<Label text="{i18n>FRAGMENT_ASSIGN_SERVICE_ORDER_COLUMN_CUSTOMER}" class="sapUiTinyMarginTop"/>
+									</f:label>
+									<f:fields>
+										<Label id="customerName" text="{WorklistDemandsToStaff>/0/Customer}" class="sapUiTinyMarginTop"/>
+									</f:fields>
+								</f:FormElement>
+								<f:FormElement >
+									<f:label>
+										<Label text="{i18n>FRAGMENT_ASSIGN_SERVICE_ORDER_COLUMN_ITEM_DESCRIPTION}" class="sapUiTinyMarginTop"/>
+									</f:label>
+									<f:fields>
+										<Label id="itemDescription" text="{WorklistDemandsToStaff>/0/Itemdescription}" class="sapUiTinyMarginTop"/>
+									</f:fields>
+								</f:FormElement>
+								<f:FormElement >
+									<f:label>
+										<Label text="{i18n>VIEW_WORKLIST_TABLE_COLUMN_HEADER_DESCRIPTION}" class="sapUiTinyMarginTop"/>
+									</f:label>
+									<f:fields>
+										<Label id="serviceDetails" text="{WorklistDemandsToStaff>/0/Headerdescription}" class="sapUiTinyMarginTop"/>
+									</f:fields>
+								</f:FormElement>
+								<!--                                <f:FormElement >
+                                    <f:label>
+                                        <Label text="{i18n>FRAGMENT_EDIT_SERVICE_ORDER_QUALIFICATION}" class="sapUiTinyMarginTop"/>
+                                    </f:label>
+                                    <f:fields>
+                                        <Label id="qualificationText" text="{WorklistDemandsToStaff>/0/QualificationTxt}" class="sapUiTinyMarginTop"/>
+                                    </f:fields>
+                                </f:FormElement>-->
+								<!--<f:FormElement >
+									<f:label>
+										<Label text="{i18n>FRAGMENT_EDIT_SERVICE_ORDER_CALLOFFDAYS}" class="sapUiTinyMarginTop"/>
+									</f:label>
+									<f:fields>
+										<Label id="callOffDays" text="{path:'WorklistDemandsToStaff>/0/CallOff', formatter:'.formatterReuse.addDaysToDuration'}"
+											class="sapUiTinyMarginTop"/>
+									</f:fields>
+								</f:FormElement>-->
+								<!--<f:FormElement >
+									<f:label>
+										<Label text="{i18n>FRAGMENT_EDIT_SERVICE_ORDER_DURATION}" class="sapUiTinyMarginTop"/>
+									</f:label>
+									<f:fields>
+										<Label id="durationDays" text="{path:'WorklistDemandsToStaff>/0/Duration', formatter:'.formatterReuse.addDaysToDuration'}"
+											class="sapUiTinyMarginTop"/>
+									</f:fields>
+								</f:FormElement>-->
+								<f:FormElement>
+									<f:label>
+										<Label text="{i18n>FRAGMENT_ASSIGN_SERVICE_ORDER_ASSIGNED_EMPLOYEE}" class="sapUiTinyMarginTop"/>
+									</f:label>
+									<f:fields>
+										<Label id="employeeName" text="{WorklistDemandsToStaff>/0/FullName}" class="sapUiTinyMarginTop"/>
+									</f:fields>
+								</f:FormElement>
+								<!--IO Details-->
+								<f:FormElement>
+									<f:label>
+										<Label text="{i18n>FRAGMENT_ASSIGN_SERVICE_ORDER_IO_DETAILS}" class="sapUiTinyMarginTop"/>
+									</f:label>
+									<f:fields>
+										<Label id="idIOdetails" text="{parts:[{path:'WorklistDemandsToStaff>/0/InternalOrder'}, {path:'WorklistDemandsToStaff>/0/IoDescription'}], formatter:'.formatterReuse.seperateWithSlash'}" class="sapUiTinyMarginTop"/>
+									</f:fields>
+								</f:FormElement>
+								<!--Staffing Manager-->
+								<f:FormElement>
+									<f:label>
+										<Label text="{i18n>FRAGMENT_ASSIGN_STAFFING_MANAGER_DETAILS}" class="sapUiTinyMarginTop"/>
+									</f:label>
+									<f:fields>
+										<!--<Label id="idStaffManager" text="{WorklistDemandsToStaff>/0/StaffingManager}-{WorklistDemandsToStaff>/0/StaffMngrName}" class="sapUiTinyMarginTop"/>-->
+										<HBox justifyContent="Start">
+										<Label id="idStaffManager" text="{WorklistDemandsToStaff>/0/StaffingManager}-{WorklistDemandsToStaff>/0/StaffMngrName}" class="sapUiTinyMarginTop"/>
+										<Label id="idStaffManagerName" text="{WorklistDemandsToStaff>/0/StaffingManager}" visible="false" class="sapuiTinyMarginTop"/>
+										<Button  icon="sap-icon://value-help" width="5%" press="onHelpButtonClickfrStaffManager"></Button>
+										</HBox>
+									</f:fields>
+								</f:FormElement>
+								<!--Task Type-->
+								<f:FormElement>
+									<f:label>
+										<Label text="{i18n>FRAGMENT_ASSIGN_SERVICE_ORDER_TASK_TYPE}" class="sapUiTinyMarginTop"/>
+									</f:label>
+									<f:fields>
+										<!--<Label id="idtasktype" text="{WorklistDemandsToStaff>/0/TaskType}" class="sapUiTinyMarginTop"/>-->
+										<ComboBox id="idtasktypeEdit" value="{WorklistDemandsToStaff>/0/TaskType}" selectedKey="{WorklistDemandsToStaff>/0/TaskType}" required="true"
+											visible="false" items="{taskTypeModel>/}" change="handleTasktypeDropdown" width="60%">
+											<core:Item key="{taskTypeModel>TaskType}" text="{taskTypeModel>TaskType}"/>
+											<!--<core:Item key="ESCA" text="ESCA"/>
+											<core:Item key="IPW" text="Internal Project Work"/>-->
+											<layoutData>
+												<l:GridData span="L6 M6 S6"/>
+											</layoutData>
+										</ComboBox>
+									</f:fields>
+								</f:FormElement>
+								<!---Fraction-->
+								<f:FormElement>
+									<f:label>
+										<Label text="{i18n>FRAGMENT_ASSIGN_SERVICE_ORDER_FRACTION}" class="sapUiTinyMarginTop"/>
+									</f:label>
+									<f:fields>
+										<ComboBox id="idfraction" value="{WorklistDemandsToStaff>/0/StaffFraction}" selectedKey="{WorklistDemandsToStaff>/0/StaffFraction}" required="true"
+											visible="false" items="{fractionModel>/}" change="handleFractionDropdown" width="50%">
+											<core:Item key="{taskTypeModel>StaffFraction}" text="{taskTypeModel>StaffFraction}"/>
+											<layoutData>
+												<l:GridData span="L6 M6 S6"/>
+											</layoutData>
+										</ComboBox>
+									</f:fields>
+								</f:FormElement>
+								<f:FormElement>
+									<f:label>
+										<Label text="{i18n>FRAGMENT_ASSIGN_SERVICE_ORDER_START_DATE_TIME}" class="sapUiTinyMarginTop"/>
+									</f:label>
+									<f:fields>
+										<DatePicker id="begDate" dateValue="{WorklistDemandsToStaff>/0/BegDate}" valueFormat="yyyy-MM-dd" change="onDatesChanged"/>
+										<TimePicker dateValue="{WorklistDemandsToStaff>/0/StartTime}" valueFormat="HH:mm" change="onDatesChanged"/>
+									</f:fields>
+								</f:FormElement>
+								<f:FormElement>
+									<f:label>
+										<Label text="{i18n>FRAGMENT_ASSIGN_SERVICE_ORDER_END_DATE_TIME}" class="sapUiTinyMarginTop"/>
+									</f:label>
+									<f:fields>
+										<DatePicker id="endDate" dateValue="{WorklistDemandsToStaff>/0/EndDate}" valueFormat="yyyy-MM-dd" change="onDatesChanged"/>
+										<TimePicker dateValue="{WorklistDemandsToStaff>/0/EndTime}" valueFormat="HH:mm" change="onDatesChanged"/>
+									</f:fields>
+								</f:FormElement>
+								<!--Only showing at time of create scenario-->
+								<f:FormElement visible="true" id="idCheckboxWeekDays">
+									<HBox alignItems="Center" class="sapUiTinyMargin">
+										<items>
+											<VBox alignItems="Center">
+												<items>
+													<Text text="{i18n>FRAGMENT_CREATEALLOCATION_TABLE_COLUMN_MONDAY_ABBREVIATION}"/>
+													<CheckBox id="DaysOfTheWeekPicker1" selected="{WorklistDemandsToStaff>/0/Monday}"/>
+												</items>
+												<layoutData>
+													<FlexItemData growFactor="1"/>
+												</layoutData>
+											</VBox>
+											<VBox alignItems="Center">
+												<items>
+													<Text text="{i18n>FRAGMENT_CREATEALLOCATION_TABLE_COLUMN_TUESDAY_ABBREVIATION}"/>
+													<CheckBox id="DaysOfTheWeekPicker2" selected="{WorklistDemandsToStaff>/0/Tuesday}"/>
+												</items>
+												<layoutData>
+													<FlexItemData growFactor="1"/>
+												</layoutData>
+											</VBox>
+											<VBox alignItems="Center">
+												<items>
+													<Text text="{i18n>FRAGMENT_CREATEALLOCATION_TABLE_COLUMN_WEDNESDAY_ABBREVIATION}"/>
+													<CheckBox id="DaysOfTheWeekPicker3" selected="{WorklistDemandsToStaff>/0/Wednusday}"/>
+												</items>
+												<layoutData>
+													<FlexItemData growFactor="1"/>
+												</layoutData>
+											</VBox>
+											<VBox alignItems="Center">
+												<items>
+													<Text text="{i18n>FRAGMENT_CREATEALLOCATION_TABLE_COLUMN_THURSDAY_ABBREVIATION}"/>
+													<CheckBox id="DaysOfTheWeekPicker4" selected="{WorklistDemandsToStaff>/0/Thursday}"/>
+												</items>
+												<layoutData>
+													<FlexItemData growFactor="1"/>
+												</layoutData>
+											</VBox>
+											<VBox alignItems="Center">
+												<items>
+													<Text text="{i18n>FRAGMENT_CREATEALLOCATION_TABLE_COLUMN_FRIDAY_ABBREVIATION}"/>
+													<CheckBox id="DaysOfTheWeekPicker5" selected="{WorklistDemandsToStaff>/0/Friday}"/>
+												</items>
+												<layoutData>
+													<FlexItemData growFactor="1"/>
+												</layoutData>
+											</VBox>
+											<VBox alignItems="Center">
+												<items>
+													<Text text="{i18n>FRAGMENT_CREATEALLOCATION_TABLE_COLUMN_SATURDAY_ABBREVIATION}"/>
+													<CheckBox id="DaysOfTheWeekPicker6" selected="{WorklistDemandsToStaff>/0/Saturday}"/>
+												</items>
+												<layoutData>
+													<FlexItemData growFactor="1"/>
+												</layoutData>
+											</VBox>
+											<VBox alignItems="Center">
+												<items>
+													<Text text="{i18n>FRAGMENT_CREATEALLOCATION_TABLE_COLUMN_SUNDAY_ABBREVIATION}"/>
+													<CheckBox id="DaysOfTheWeekPicker7" selected="{WorklistDemandsToStaff>/0/Sunday}"/>
+												</items>
+												<layoutData>
+													<FlexItemData growFactor="1"/>
+												</layoutData>
+											</VBox>
+										</items>
+									</HBox>
+								</f:FormElement>
+							
+							</f:formElements>
+						</f:FormContainer>
+					</f:formContainers>
+				</f:Form>
+			</l:HorizontalLayout>
+		</l:VerticalLayout>
+		<buttons>
+			<Button id="idForSaveButton" text="{i18n>FRAGMENT_ASSIGN_SERVICE_ORDER_SAVE_BUTTON}" press="onSaveAssignServiceOrder"/>
+			<Button id="idForCancelButton" text="{i18n>FRAGMENT_ASSIGN_SERVICE_ORDER_CANCEL_BUTTON}" press="onCloseDialog"/>
+		</buttons>
+	</Dialog>
+</core:FragmentDefinition>

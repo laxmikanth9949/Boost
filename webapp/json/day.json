@@ -1,0 +1,107 @@
+{
+	"metaTeams": [{
+		"name": "Business Down Team22.",
+		"isColumnHead": true,
+		"mailto": "D039105; D026838; I041653;",
+		"teams": [{
+			"name": "Control Center",
+			"showList": true,
+			"mailto": "D039105; D026838; I041653; I040003; I071680; I022973; I059872; I071680; I038856; ; ; ; ; ",
+			"publicHolidayShort": "",
+			"publicHolidayLong": "",
+			"isPHoliday": false
+		}, {
+			"name": "Control Center",
+			"showList": true,
+			"mailto": "D039105; D026838; I041653; I040003; I071680; I022973; I059872; I071680; I038856; ; ; ; ; ",
+			"publicHolidayShort": "",
+			"publicHolidayLong": "",
+			"isPHoliday": false,
+			"members": [{
+				"employeeId": "D039105",
+				"firstName": "Ramu",
+				"lastName": "Vidadala",
+				"role": "Region Head:",
+				"mobile": "+4916090432757",
+				"tel": "+496227768747",
+				"mailto": "r.vidadala@sap.com",
+				"deskLocation": "DE Rot04 E3.01",
+				"serviceOrder": "77010192",
+				"serviceItem": "0000000040",
+				"note": "",
+				"acts": "",
+				"actNum": "",
+				"incs": "",
+				"incNum": "",
+				"total": "",
+				"icon": true
+			}, {
+				"employeeId": "D026838",
+				"firstName": "Christian",
+				"lastName": "Vidadala",
+				"role": "Region Head:",
+				"mobile": "+4916090432757",
+				"tel": "+496227768747",
+				"mailto": "r.vidadala@sap.com",
+				"deskLocation": "DE Rot04 E3.01",
+				"serviceOrder": "77010192",
+				"serviceItem": "0000000040",
+				"note": "",
+				"acts": "",
+				"actNum": "",
+				"incs": "",
+				"incNum": "",
+				"total": "",
+				"icon": true
+			}]
+		}]
+	}, {
+		"name": "Business Down Team.",
+		"isColumnHead": true,
+		"teams": [{
+			"name": "Control Center",
+			"showList": true,
+			"mailto": "D039105; D026838; I041653; I040003; I071680; I022973; I059872; I071680; I038856; ; ; ; ; ",
+			"publicHolidayShort": "",
+			"publicHolidayLong": "",
+			"isPHoliday": false,
+			"members": [{
+				"employeeId": "D039105",
+				"firstName": "Ramu",
+				"lastName": "Vidadala",
+				"role": "Region Head:",
+				"mobile": "+4916090432757",
+				"tel": "+496227768747",
+				"mailto": "r.vidadala@sap.com",
+				"deskLocation": "DE Rot04 E3.01",
+				"serviceOrder": "77010192",
+				"serviceItem": "0000000040",
+				"note": "",
+				"acts": "",
+				"actNum": "",
+				"incs": "",
+				"incNum": "",
+				"total": "",
+				"icon": true
+			}, {
+				"employeeId": "D026838",
+				"firstName": "Christian",
+				"lastName": "Vidadala",
+				"role": "Region Head:",
+				"mobile": "+4916090432757",
+				"tel": "+496227768747",
+				"mailto": "r.vidadala@sap.com",
+				"deskLocation": "DE Rot04 E3.01",
+				"serviceOrder": "77010192",
+				"serviceItem": "0000000040",
+				"note": "",
+				"acts": "",
+				"actNum": "",
+				"incs": "",
+				"incNum": "",
+				"total": "",
+				"icon": true
+			}]
+		}]
+	}]
+}

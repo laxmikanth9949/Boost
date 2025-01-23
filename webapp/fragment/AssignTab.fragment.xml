@@ -1,0 +1,71 @@
+<core:FragmentDefinition xmlns="sap.m" xmlns:core="sap.ui.core" class="sapUiSizeCompact">
+	<Dialog title="{i18n>seatAssignment}" resizable="true" draggable="true" afterClose="onClear">
+		<content>
+			<Table id="AssignmentTab" items="{AssigndDemand>/results}" fixedLayout="false" width="100%">
+				<headerToolbar>
+					<Toolbar>
+						<ToolbarSpacer/>
+						<Label id="timezoneSelected"
+							text="{parts: [ {path: 'i18n>VIEW_WORKLIST_TIMEZONE_TEXT'}, {path: 'TimeZone>/SelectedTimeZone'}, {path: 'TimeZone>/'} ], formatter: '.formatterReuse.displayTimeZone'}"
+							class="sapUiSmallMarginEnd"/>
+					</Toolbar>
+				</headerToolbar>
+				<columns>
+					<Column id="DemandId" demandPopin="true" visible="true" width="auto">
+						<Text text="{i18n>demandId}"/>
+					</Column>
+					<Column id="ServiceItem" demandPopin="true" minScreenWidth="small" visible="true" width="auto">
+						<Text text="{i18n>demandItem}"/>
+					</Column>
+					<Column id="StartDt" demandPopin="true" visible="true" width="auto">
+						<Text text="{i18n>assgnsrtdt}"/>
+					</Column>
+					<Column id="EndDt" demandPopin="true" visible="true" width="auto">
+						<Text text="{i18n>assgnenddt}"/>
+					</Column>
+					<Column id="FirstName" demandPopin="true" visible="true" width="auto">
+						<Text text="{i18n>firstname}"/>
+					</Column>
+					<Column id="LastDt" demandPopin="true" visible="true" width="auto">
+						<Text text="{i18n>lastname}"/>
+					</Column>
+					<Column id="assignResCol" demandPopin="true" visible="true" width="auto">
+						<Text text="{i18n>assignResource}"/>
+					</Column>
+				</columns>
+				<items>
+					<ColumnListItem>
+						<cells>
+							<Text text="{AssigndDemand>serviceOrder}" id="SServiceOrder"/>
+							<Text text="{AssigndDemand>serviceItem}" id="SServiceId"/>
+							<Text text="{path: 'AssigndDemand>Assignmentstartdate', formatter:'.formatter.date'}"/>
+							<Text text="{path: 'AssigndDemand>Assignmentenddate', formatter:'.formatter.date'}"/>
+							<Text text="{AssigndDemand>firstName}" id="Sfirstname"/>
+							<Text text="{AssigndDemand>lastName}" id="Slastname"/>
+							<HBox>
+								<!--<EmpSingleSelect:EmployeeSearchComponent id="AssignEmployee" visible="true"/>-->
+								<Input id="id___EmpId" width="100%" showValueHelp="true" valueHelpRequest="onEmployeeSearchOpen" change="onEmployeeChange"
+									value="{AssigndDemand>employeeId}"/>
+							</HBox>
+						</cells>
+					</ColumnListItem>
+				</items>
+			</Table>
+			<Bar>
+				<contentLeft>
+					<Label text="Recent allocated Employee Details" design="Bold"></Label>
+				</contentLeft>
+			</Bar>
+			<List id="idBufferingList" items="{SuggestListData>/results}">
+				<StandardListItem title="{SuggestListData>EmpId}" description="{SuggestListData>FirstName}{SuggestListData>LastName}"
+					info="{SuggestListData>Email}" type="Active" press="onSuggestListPress"/>
+			</List>
+		</content>
+		<beginButton>
+			<Button text="{i18n>save}" id="assignItems" icon="sap-icon://save" press="onAssignItems" visible="true"/>
+		</beginButton>
+		<endButton>
+			<Button text="{i18n>close}" press="closeDialog"/>
+		</endButton>
+	</Dialog>
+</core:FragmentDefinition>

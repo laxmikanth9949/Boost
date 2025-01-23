@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Unit Tests for Boost</title>
+		<meta http-equiv='X-UA-Compatible' content='IE=edge'>
+		<meta charset="utf-8">
+		
+		<script id="sap-ui-bootstrap"
+				src="https://sapui5.hana.ondemand.com/resources/sap-ui-core.js"
+				data-sap-ui-resourceroots='{
+					"sap.support.boost": "../../",
+					"sap.support.boost.test": "../"
+				}'
+				data-sap-ui-frameOptions='deny'>
+		</script>
+		
+		<script>
+			jQuery.sap.require("sap.ui.thirdparty.qunit-2");
+			jQuery.sap.require("sap.ui.qunit.qunit-2-css");
+			jQuery.sap.require("sap.ui.qunit.qunit-junit");
+			jQuery.sap.require("sap.ui.qunit.qunit-coverage");
+			//jQuery.sap.require("sap.ui.test.TestUtils"); //Seems no available utils currently
+			jQuery.sap.require("sap.ui.qunit.QUnitUtils"); //SAPUI5 utilities such as sap.ui.test.qunit.triggerKeydown, sap.ui.test.qunit.triggerMouseEvent, et al
+			
+			if (window.blanket) {
+				window.blanket.options("sap-ui-cover-only", ["sap/support/boost"]);
+			}
+			
+			QUnit.config.autostart = false;
+			
+			sap.ui.require([
+			                "sap/support/boost/test/unit/AllUnitTest"
+			                ],function(){
+				QUnit.start();
+			});
+		</script>
+	</head>
+	
+	<body>
+		<ol id="qunit-tests"></ol>
+		<div id="qunit-fixture"></div>
+	</body>
+</html>

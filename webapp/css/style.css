@@ -1,0 +1,265 @@
+.sapMInputIE9 .sapMInputValHelp {
+    border-bottom-width: 0rem !important;
+    border-right-width: 0rem !important;
+    border-left-width: 0rem !important;
+    border-top-width: 0rem !important;
+}
+
+section#Boost\.app\.page-cont {
+    height: auto !important;
+}
+
+.sapMShellCentralBox {
+    /*make width 100, main page*/
+    margin-left: 0 !important;
+    left: 0 !important;
+    width: 100% !important;
+    background-color: black !important;
+}
+
+#main {
+    /*main page background color*/
+    background-color: #ffffff
+}
+
+#day {
+    /*day page background color*/
+    background-color: #ffffff
+}
+
+#month {
+    /*day page background color*/
+    background-color: #ffffff
+}
+
+#dtmn {
+    /*day page background color*/
+    background-color: #ffffff
+}
+
+.navButtonTop {
+    font-weight: bold;
+}
+
+.sapMBtnInner {
+    text-shadow: 0 0 0 #ffffff !important;
+}
+
+.sapMPanelBG {
+    background-color: #ffffff
+}
+
+
+/*Toolbar buttons date picker etc*/
+
+span#Boost\.view\.main\.prev-img {
+    font-size: 1rem;
+}
+
+span#Boost\.view\.main\.next-img {
+    font-size: 1rem;
+}
+
+span#Boost\.view\.main\.delCache-img {
+    font-size: 1rem;
+}
+
+input#Boost\.view\.day\.DatePicker-inner {
+    border: 1px solid #ffffff;
+}
+
+input#Boost\.view\.day\.TeamComBox-inner {
+    border: 1px solid #ffffff;
+}
+
+input#Boost\.view\.day\.RegionComBox-inner {
+    border: 1px solid #ffffff;
+}
+
+div#Boost\.view\.day\.RegionComBox {
+    border: 1px solid #ffffff;
+}
+
+div#Boost\.view\.day\.TeamComBox {
+    border: 1px solid #ffffff;
+}
+
+
+/* Day Lists*/
+
+.listMatrixCell {
+    vertical-align: top !important;
+}
+
+.sapMTitle {
+    text-shadow: none !important;
+    color: #ffffff;
+    font-size: 0.9rem !important;
+}
+
+.sapMListHdr {
+    background-color: #3498DB;
+    color: #FFFFFF;
+    font: normal 0.9rem Arial, Helvetica, sans-serif;
+    height: 2rem;
+    line-height: 2rem;
+    text-shadow: none;
+    padding-top: 0px;
+    padding-right: 0.5rem;
+    border-bottom: 0px solid #ffffff;
+    */
+}
+
+.sapMTB.sapMTB-Transparent-CTX {
+    background: #2da3d6;
+}
+
+.sapMListHdrTBar {
+    background-color: #3498DB;
+    color: #FFFFFF;
+    font: normal 0.9rem Arial, Helvetica, sans-serif;
+    height: 2rem;
+    line-height: 2rem;
+    text-shadow: none;
+    padding-top: 0px;
+    padding-right: 0.5rem;
+    border-bottom: 0px solid #ffffff;
+    */
+}
+
+.headerTeamsCell {
+    background-color: #34495E;
+    height: 2rem;
+    line-height: 2rem;
+}
+
+.headerTeamsCellLabel {
+    color: #FFFFFF;
+    font: normal 0.9rem Arial, Helvetica, sans-serif;
+}
+
+.sapMLIBContent {
+    margin-left: 1rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.sapMText {
+    font-size: 0.775rem;
+}
+
+.sapMLabel {
+    font-size: 0.775rem;
+}
+
+.sapMLIB {
+    border-bottom: none;
+}
+
+
+/* .staffListItem:hover {
+	background-color: #C5EFF7 !important;
+}
+
+.staffListItem:active {
+	background-color: #89C4F4;
+} */
+
+#__container1-scroll {
+    width: 100% !important;
+}
+
+#__container2-scroll {
+    width: 100% !important;
+}
+
+
+/*POP over mods*/
+
+label.sapMDLILabel {
+    font-size: 0.775rem;
+}
+
+div.sapMDLIValue {
+    font-size: 0.775rem;
+}
+
+.sapMDLI {
+    height: 2rem;
+}
+
+.sapMIBar-CTX.sapMFooter-CTX {
+    text-shadow: none;
+    border-top: none;
+}
+
+
+/* Month View*/
+
+.wrapRole {
+    white-space: normal;
+}
+
+.monthCalCell {
+    /* 	border-right: 1px solid #e5e5e5; */
+    border-bottom: 1px solid #e5e5e5;
+    border-left: 1px solid #e5e5e5;
+    vertical-align: top !important;
+}
+
+.monthCalCellDate {
+    margin-left: 1rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.1rem;
+    border-bottom: 1px solid #e5e5e5;
+    color: #34495E;
+    font-weight: bold;
+}
+
+.monthCalCellPH {
+    margin-left: 1rem;
+    background-color: #3498DB;
+    color: #ffffff;
+}
+
+.labelNoStaffing {
+    white-space: pre-line;
+    word-wrap: break-word;
+    margin: 1rem;
+}
+
+
+/*Duty manager*/
+
+.headerTeamsCell2 {
+    background-color: #3498DB;
+    height: 2rem;
+    line-height: 2rem;
+}
+
+.headerTeamCellMail {
+    padding-right: 0.5rem;
+    color: white;
+}
+
+.margins {
+    margin: 1rem;
+}
+
+
+/*remove when GW moves to 1.34 ui5
+fix popover bug*/
+
+.sapMPopoverCont {
+    min-width: 300px;
+}
+
+.html_margin {
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 0.775rem;
+    text-align: center;
+    margin-right: 10px;
+}
+/*.custContentMargin .sapMLIBContent {*/
+/*     margin-left: 0rem*/
+/*    }*/

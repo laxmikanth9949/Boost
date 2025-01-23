@@ -1,0 +1,14 @@
+<core:FragmentDefinition xmlns="sap.m" xmlns:core="sap.ui.core">
+	<Dialog title="Escalation Number and System ID">
+		<List items="{ path: 'EscSystemID>/' }">
+				<DisplayListItem label="{EscSystemID>incId}" type="Active" press="handleEscSysPress">
+					<customData>
+						<core:CustomData value="{EscSystemID>fullIncId}"/>
+					</customData>
+				</DisplayListItem>
+		</List>
+		<endButton>
+			<Button text="Close" press="hanldcustEscDialogClose"/>
+		</endButton>
+	</Dialog>
+</core:FragmentDefinition>

@@ -1,0 +1,27 @@
+<Dialog title="{i18n>information}" xmlns="sap.m" icon="sap-icon://message-information" state="Information" titleAlignment="Center">
+	<content>
+		<FormattedText class="sapUiSmallMargin" htmlText="{Info>/HTML2}" visible="false"/>
+		<VBox justifyContent="Center" alignContent="Center" alignItems="Center">
+			<Label/>
+			<Link text="CCT Jam Page - Tools" target="_blank" wrapping="true"
+				href="https://jam4.sapjam.com/groups/m6ozFmMl2T8d2R9x77ZbCC/overview_page/UMYwmPi0Fzn9B2ecVX621e?edit_mode=true"/>
+			<Label/>
+			<Link text="MCC Tools Jam - BOOST" target="_blank" wrapping="true"
+				href="https://jam4.sapjam.com/wiki/show/KpgyxoERbrAffMeygIsHcK?_lightbox=true"/>
+			<Label/>
+			<Link text="User Guidelines for BOOST Business Users" target="_blank" wrapping="true"
+				href="https://sap.sharepoint.com/sites/120686/Shared%20Documents/Docs%20accessible%20for%20all%20SAP%20employees/Central%20Control%20Team%20(CCT)%20jam%20page/Tools/BOOST%20User%20Guide_Business%20Users.pdf"/>
+			<Label/>
+			<Link text="User Guidelines for Regional BOOST Ops" target="_blank" wrapping="true"
+				href="https://sap.sharepoint.com/sites/120686/Shared%20Documents/Docs%20accessible%20for%20all%20SAP%20employees/Central%20Control%20Team%20(CCT)%20jam%20page/Tools/BOOST%20User%20Guide_Regional%20BOOST%20Ops.pdf"/>
+			<Label/>
+			<Link text="Open IT Ticket in case of issues" target="_blank" wrapping="true" press="openITDticketpress"/>
+			<Label/>
+			<Link text="Open an Idea to raise a Change Request" target="_blank" wrapping="true" href="https://im.enter.sap/sap/ino/#/campaign/340"/>
+			<Label/>
+		</VBox>
+	</content>
+	<buttons>
+		<Button text="{i18n>close}" press="closeDialog"/>
+	</buttons>
+</Dialog>

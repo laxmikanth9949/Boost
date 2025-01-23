@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>BOOST -Test</title>
+		<script id="sap-ui-bootstrap"
+		    src= "../resources/sap-ui-core.js"
+			data-sap-ui-libs="sap.m"
+			data-sap-ui-theme="sap_belize"
+			data-sap-ui-resourceroots='{"sap.support.boost": "../"}'
+			data-sap-ui-compatVersion="edge"
+			data-sap-ui-async="true"
+			data-sap-ui-frameOptions="trusted">
+		</script>
+		
+		<script>
+			
+			sap.ui.getCore().attachInit(function () {
+			sap.ui.require([
+						"sap/support/boost/localService/mockserver",
+						"sap/ui/core/ComponentContainer"
+					],function(mockserver, ComponentContainer){
+						mockserver.init();
+						 new ComponentContainer({
+									height: "100%",
+									name: "sap.support.boost"
+								}).placeAt("content");
+						});
+		});
+		</script>
+	</head>
+
+	<body class="sapUiBody" id="content">
+	</body>
+</html>

@@ -1,0 +1,60 @@
+<core:FragmentDefinition xmlns="sap.m" xmlns:core="sap.ui.core" xmlns:form="sap.ui.layout.form" xmlns:l="sap.ui.layout">
+	<Dialog showHeader="false" contentHeight="auto" contentWidth="85%">
+		<content>
+			<!--<HBox class="contentSpacing">-->
+			<!--	<Button text="Go" type="Emphasized" press="onFilterGOFragment" class="textSpacing"></Button>-->
+			<!--	<Button text="Hide Filter" id="idBtnFilter" press="onHideFilter" class="textSpacing"></Button>-->
+			<!--</HBox>-->
+			<form:SimpleForm editable="true" id="idSmFrm" labelSpanL="5" emptySpanL="2" labelSpanM="5" emptySpanM="2" layout="ResponsiveGridLayout">
+				<form:content>
+					<core:Title></core:Title>
+					<Label text="First Name"></Label>
+					<Input id="idFrstName" submit="onSearchName" type="Text"></Input>
+					<Label text="Last Name"></Label>
+					<Input id="idLstName" submit="onSearchName" type="Text"></Input>
+					<core:Title></core:Title>
+					<Label text="Employee ID"></Label>
+					<Input id="idEmpNum" submit="onSearchName" ></Input>
+					<Label></Label>
+					<Button text="Search" press="onSearchName"></Button>
+				</form:content>
+			</form:SimpleForm>
+			<Table mode="SingleSelectLeft" id="idF4Table" items="{userEmpModel>/empData}" selectionChange="onSelectionF4Name">
+				<columns>
+					<Column width="12em">
+						<Text text="First Name"/>
+					</Column>
+					<Column width="12em">
+						<Text text="Last Name"/>
+					</Column>
+					<Column width="12em">
+						<Text text="Employee ID"/>
+					</Column>
+					<Column width="12em">
+						<Text text="Personnel Number"/>
+					</Column>
+					<Column width="12em">
+						<Text text="Manager"/>
+					</Column>
+				</columns>
+				<items>
+					<ColumnListItem>
+						<cells>
+							<Text text="{userEmpModel>FirstName}"></Text>
+							<Text text="{userEmpModel>LastName}"></Text>
+							<Text text="{userEmpModel>EmpId}"></Text>
+							<Text text="{userEmpModel>PERNO}"></Text>
+							<Text text="{userEmpModel>Manager}"></Text>
+						</cells>
+					</ColumnListItem>
+				</items>
+			</Table>
+		</content>
+		<beginButton>
+			<Button text="OK" type="Emphasized" press="onf4HelpOk"></Button>
+		</beginButton>
+		<endButton>
+			<Button text="Cancel" press="onCancelFragment"></Button>
+		</endButton>
+	</Dialog>
+</core:FragmentDefinition>

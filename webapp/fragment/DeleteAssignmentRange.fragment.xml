@@ -1,0 +1,84 @@
+<core:FragmentDefinition xmlns="sap.m" xmlns:core="sap.ui.core" xmlns:f="sap.ui.layout.form" xmlns:l="sap.ui.layout">
+	<Dialog title="{i18n>DeleteAssigment}" id="idForDeleteAssignWorklistDemandDialog" beforeOpen="onBeforeOpen">
+		<l:VerticalLayout>
+			<l:HorizontalLayout>
+				<f:Form id="iddeleteRangeAllocation" class="editableForm" width="700px">
+					<f:layout>
+						<f:ResponsiveGridLayout editable="true" layout="ResponsiveGridLayout" labelSpanL="3" labelSpanM="3" emptySpanL="0" emptySpanM="0"
+							columnsL="3" columnsM="3"/>
+					</f:layout>
+					<f:formContainers>
+						<f:FormContainer>
+							<f:formElements>
+								<f:FormElement>
+									<f:label>
+										<Label text="{i18n>FRAGMENT_ASSIGN_SERVICE_ORDER_COLUMN_ASSIGNMENT_DETAILS}" class="sapUiTinyMarginTop"/>
+									</f:label>
+									<f:fields>
+										<Label id="delassignmentDetails"
+											text="{parts:[{path:'WorklistDemandsToStaff>/0/serviceOrder'}, {path:'WorklistDemandsToStaff>/0/serviceItem'}], formatter:'.formatterReuse.seperateWithSlash'}"
+											class="sapUiTinyMarginTop"/>
+									</f:fields>
+								</f:FormElement>
+								<f:FormElement >
+									<f:label>
+										<Label text="{i18n>FRAGMENT_ASSIGN_SERVICE_ORDER_COLUMN_CUSTOMER}" class="sapUiTinyMarginTop"/>
+									</f:label>
+									<f:fields>
+										<Label id="delcustomerName" text="{WorklistDemandsToStaff>/0/Customer}" class="sapUiTinyMarginTop"/>
+									</f:fields>
+								</f:FormElement>
+								<f:FormElement >
+									<f:label>
+										<Label text="{i18n>FRAGMENT_ASSIGN_SERVICE_ORDER_COLUMN_ITEM_DESCRIPTION}" class="sapUiTinyMarginTop"/>
+									</f:label>
+									<f:fields>
+										<Label id="delitemDescription" text="{WorklistDemandsToStaff>/0/Itemdescription}" class="sapUiTinyMarginTop"/>
+									</f:fields>
+								</f:FormElement>
+								<f:FormElement >
+									<f:label>
+										<Label text="{i18n>VIEW_WORKLIST_TABLE_COLUMN_HEADER_DESCRIPTION}" class="sapUiTinyMarginTop"/>
+									</f:label>
+									<f:fields>
+										<Label id="delserviceDetails" text="{WorklistDemandsToStaff>/0/Headerdescription}" class="sapUiTinyMarginTop"/>
+									</f:fields>
+								</f:FormElement>
+								<f:FormElement>
+									<f:label>
+										<Label text="{i18n>FRAGMENT_ASSIGN_SERVICE_ORDER_ASSIGNED_EMPLOYEE}" class="sapUiTinyMarginTop"/>
+									</f:label>
+									<f:fields>
+										<Label id="delemployeeName" text="{WorklistDemandsToStaff>/0/firstName} {WorklistDemandsToStaff>/0/lastName}" class="sapUiTinyMarginTop"/>
+									</f:fields>
+								</f:FormElement>
+								<f:FormElement>
+									<f:label>
+										<Label text="{i18n>FRAGMENT_ASSIGN_SERVICE_ORDER_START_DATE_TIME}" class="sapUiTinyMarginTop"/>
+									</f:label>
+									<f:fields>
+										<DatePicker id="delbegDate" dateValue="{WorklistDemandsToStaff>/0/BegDate}" valueFormat="yyyy-MM-dd" change="onDatesChanged"/>
+										<TimePicker dateValue="{WorklistDemandsToStaff>/0/StartTime}" valueFormat="HH:mm" change="onDatesChanged"/>
+									</f:fields>
+								</f:FormElement>
+								<f:FormElement>
+									<f:label>
+										<Label text="{i18n>FRAGMENT_ASSIGN_SERVICE_ORDER_END_DATE_TIME}" class="sapUiTinyMarginTop"/>
+									</f:label>
+									<f:fields>
+										<DatePicker id="delendDate" dateValue="{WorklistDemandsToStaff>/0/EndDate}" valueFormat="yyyy-MM-dd" change="onDatesChanged"/>
+										<TimePicker dateValue="{WorklistDemandsToStaff>/0/EndTime}" valueFormat="HH:mm" change="onDatesChanged"/>
+									</f:fields>
+								</f:FormElement>
+							</f:formElements>
+						</f:FormContainer>
+					</f:formContainers>
+				</f:Form>
+			</l:HorizontalLayout>
+		</l:VerticalLayout>
+		<buttons>
+			<Button id="idForSaveButton" text="{i18n>FRAGMENT_ASSIGN_SERVICE_ORDER_SAVE_BUTTON}" press="onDeleteRangeAllocation"/>
+			<Button id="idForCancelButton" text="{i18n>FRAGMENT_ASSIGN_SERVICE_ORDER_CANCEL_BUTTON}" press="onCloseDialog"/>
+		</buttons>
+	</Dialog>
+</core:FragmentDefinition>
